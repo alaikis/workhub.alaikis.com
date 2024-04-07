@@ -1,0 +1,2 @@
+class Declare < ApplicationRecord
+end

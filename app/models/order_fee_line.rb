@@ -1,0 +1,2 @@
+class OrderFeeLine < ApplicationRecord
+end

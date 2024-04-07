@@ -1,0 +1,2 @@
+class OrderPackage < ApplicationRecord
+end

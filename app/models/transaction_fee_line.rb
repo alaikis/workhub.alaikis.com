@@ -1,0 +1,2 @@
+class TransactionFeeLine < ApplicationRecord
+end
