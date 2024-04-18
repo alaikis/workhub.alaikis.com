@@ -21,7 +21,7 @@ default: &default
 
 development:
   <<: *default
-  host: webapps.domain.alaicloud.com
+  host: 43.153.39.108
   username: workhub
   database: workhub
   password: workhub2024@cloud
@@ -58,7 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  host: webapps.domain.alaicloud.com
+  host: 43.153.39.108
   username: workhub
   database: workhub
   password: workhub2024@cloud
@@ -85,6 +85,7 @@ test:
 #
 production:
   <<: *default
+  host: 127.0.0.1
   database: workhub
   username: workhub
   password: workhub2024@cloud

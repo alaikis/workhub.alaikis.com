@@ -50,11 +50,13 @@
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.1, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.12.0, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.2.1, ruby-3.3.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httpclient (v2.8.3, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.4, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.7.2, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="irb (v1.12.0, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kredis (v1.7.0, ruby-3.3.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="logger (v1.6.0, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.22.0, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.8.1, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="marcel (v1.0.4, ruby-3.3.0-p0) [gem]" level="application" />
