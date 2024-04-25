@@ -20,7 +20,7 @@ class HotBaseApi
     digest = OpenSSL::Digest.new('sha256')
     sign_string = params.sort.map{|k,v| "#{k}=#{v}"}.join("&")
     sign_origin = OpenSSL::HMAC.hexdigest(digest, @secret, sign_string)
-    Base64.decode64 sign_origin
+    Base64.encode64 sign_origin
   end
   private :make_sign
   def make_request(endpoint,data={},request_method = "POST")
@@ -43,6 +43,7 @@ class HotBaseApi
     token = @secret
     if @@auth_type!=""
       token = self.send(@@auth_type,param)
+      Rails.logger.info token
     end
     auth_string = "#{@@auth_type_name}#{@@auth_type_name!="" ? " " : ""}#{token}"
     header = {}
@@ -56,9 +57,8 @@ class HotBaseApi
     Rails.logger.info request_api_url
     api = URI.parse request_api_url
     http = HTTPClient.new
-    @res = http.request(request_method,api.to_s,param.to_json,header)
+    @res = http.request request_method,request_api_url,param
     JSON.parse @res.body
-
   end
 
 end
