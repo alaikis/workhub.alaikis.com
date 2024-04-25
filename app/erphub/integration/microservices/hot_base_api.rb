@@ -54,9 +54,11 @@ class HotBaseApi
       request_api_url = "#{request_api_url}?#{URI.encode_www_form param}"
     end
     Rails.logger.info request_api_url
+    api = URI.parse request_api_url
     http = HTTPClient.new
-    res = http.get URI.parse(request_api_url),param,header
-    JSON.parse res.body
+    @res = http.request(request_method,api.to_s,param.to_json,header)
+    JSON.parse @res.body
+
   end
 
 end

@@ -91,7 +91,10 @@ GEM
     erubi (1.12.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    http-2-next (1.0.3)
     httpclient (2.8.3)
+    httpx (1.2.4)
+      http-2-next (>= 1.0.3)
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
@@ -208,6 +211,7 @@ DEPENDENCIES
   bootsnap
   debug
   httpclient (~> 2.8, >= 2.8.3)
+  httpx
   jbuilder
   kredis
   logger
